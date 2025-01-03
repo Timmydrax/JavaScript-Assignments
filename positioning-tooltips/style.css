@@ -1,0 +1,138 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Domine", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Main Styling */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-inline: 4rem;
+  padding-block: 4rem;
+}
+
+.quote-container {
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-inline-start: 6px solid #ccc;
+  border-radius: 6px;
+  margin-inline-start: 15rem;
+  max-width: 800px;
+
+  > p {
+    margin-block-end: 4px;
+  }
+
+  > span {
+    display: inline-block;
+    font-size: 3rem;
+    height: 48px;
+  }
+}
+
+.first-div,
+.third-div {
+  padding: 1rem;
+}
+
+.first-div {
+  margin-block-end: 2rem;
+}
+
+.quote-wrapper {
+  margin-block-end: 2rem;
+}
+
+#tooltipone,
+#tooltiptwo,
+#tooltipthree {
+  /* width: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(51, 51, 51);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px; */
+
+  width: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #222;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 90%;
+}
