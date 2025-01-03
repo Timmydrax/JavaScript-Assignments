@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: "Caveat", Arial, Helvetica, sans-serif;
 }
 
 /* 5. Improve media defaults */
@@ -68,3 +69,43 @@ h6 {
 }
 
 /* Main CSS */
+.container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-inline: 2rem;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 868px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-inline-start: 4px solid #007bff;
+  border-radius: 4px;
+  padding-block: 10px;
+  padding-inline: 20px;
+  gap: 0.5rem;
+  font-style: italic;
+}
+
+.quote-one {
+  color: #007bff;
+}
+
+.quote-two {
+  color: #007bff;
+  margin-inline-start: 10px;
+}
+
+.image-text {
+  font-size: 24px;
+  color: #333;
+}
