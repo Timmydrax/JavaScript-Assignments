@@ -115,16 +115,6 @@ h6 {
 #tooltipone,
 #tooltiptwo,
 #tooltipthree {
-  /* width: max-content;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(51, 51, 51);
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px; */
-
   width: max-content;
   position: absolute;
   top: 0;
